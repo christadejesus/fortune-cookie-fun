@@ -1,31 +1,48 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortune Cookie Fun</title>
-    <link href="styles.css" rel="stylesheet"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fortune Cookie Fun | Home</title>
+    <link href="index.css" rel="stylesheet"/>
     <script defer src="script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="page-header">
-        <span>header</span>
+      <span>header</span>
     </header>
     <main class="main">
-        <div class="text">
-            <h1 class="heading">Fortune Cookie Fun</h1>
-            <p>Coming soon!</p>
+      <div class="text">
+        <h1 class="heading">Fortune Cookie Fun</h1>
+        <p class="directions" id="directions">Help yourself to a cookie. <span class="heart">♥</span></p>
+      </div>
+      <div class="plate-rim">
+        <div class="sprites-container" id="sprites-container">
+          <!--Sprites go here via JS! -->
         </div>
-            <div class="plate-rim">
-                <!--<div class="sprites-container" id="sprite-container">
-                </div> -->
-                <div class="img-container">
-                    <img src="assets/fortune-cookie-A.png" />
-                </div>
-            </div>
+      </div>
+      <div class="overlay" id="overlay" onclick="handleMessage()">
+        <div class="chosen-sprite">
+          <img class="img1" id="img1" src="assets/fortune-cookie-B.png"/>
+          <div class="fortune" id="fortune">
+            <img class="img2" id="img2" src="assets/fortune-cookie-C.png" /> 
+            <p>Some awesome randomly generated fortune will soon be here!</p>
+          </div>
         </div>
+        <button class="more-btn" id="more-btn" onClick="handleMore()">Try again</button>
+        <button class="reset" id="reset-btn" onClick="handleReset()">Reset</button>
+      </div>
     </main>
     <footer class="page-footer">
-        <p>&copy2024 <a href="https://christadejesus.com" target="__blank" rel="noopener noreferrer">Christa DeJesus</a>.</p>
+      <p>
+        I hope you enjoyed your visit! Join me at 
+        <a
+          href="https://christadejesus.com"
+          target="__blank"
+          rel="noopener noreferrer"
+          >christadejesus.com</a
+        > for more projects and snippets.
+      </p>
     </footer>
-</body>
+  </body>
 </html>

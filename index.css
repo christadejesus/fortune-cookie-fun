@@ -41,6 +41,7 @@ body {
 }
 p {
   font-size: 1.6rem;
+  line-height: 1.8;
 }
 a {
   color: inherit;
@@ -136,6 +137,7 @@ button {
     width: 100%;
     background: var(--overlay);
     opacity: 0;
+    overflow: hidden;
   }
   .chosen-sprite {
     position: relative;
@@ -148,7 +150,7 @@ button {
     overflow: hidden;
   }
   .img1, .fortune {
-      position: absolute;
+      position: absolute;      
   }
   .fortune {
     display: flex;
@@ -165,6 +167,7 @@ button {
   }
   .img1 {
       width: 330px;
+      animation: shake 300ms 1s forwards 2 linear;
       z-index: 1;
   }
   .img2 {
@@ -194,9 +197,6 @@ button {
   .overlay-active {
     display: flex;
     animation: overlayActive 300ms linear forwards;
-  }
-  .shake {
-    animation: shake 300ms 3s forwards 2 linear;
   }
 
   /* handleMessage() */

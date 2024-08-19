@@ -94,7 +94,6 @@ function makeSprites(n) {
     reset.classList.remove("show"); // needed to clear class for new picks
     overlay.classList.add("overlay-active");
     directions.classList.add("hidden");
-    cookie.classList.add("shake");
     randomFortune.innerHTML = data[getRandomQuote()];
   }
 

@@ -34,6 +34,7 @@
 /* GLOBALS */
 html {
   font-size: 8px;
+  -webkit-tap-highlight-color: transparent;
 }
 body {
   font-family: var(--sans-serif);
